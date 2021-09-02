@@ -16,8 +16,11 @@ h3 {font-size: 18px;
 }
 a {
     color: var(--primary-color);
+    text-decoration: none;
   }
-a:hover, a:focus {text-decoration: none;}
+a:hover, a:focus {
+    color: var(--dark-grey);
+    }
 
 button, .button, .message-button {
     border: none;
@@ -56,11 +59,18 @@ div {
     flex-direction: column;
     text-align: center;
 }
+.social_media_item:hover {
+    text-decoration: none;
+}
+.social_media_item {
+    width: 40px;
+    height: 40px;
+}
 .profile {
     max-width: 700px;
     margin: 0 auto;
 }
-.about, .contact {
+.about, .contact, .work {
     text-align: center;
 }
 svg {
