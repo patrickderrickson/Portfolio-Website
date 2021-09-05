@@ -33,6 +33,7 @@ button, .button, .message-button {
     border-radius: 15px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     transition: 0.2s opacity;
+    margin-top: 10px;
 }
 button:hover, button:focus,
 .button:hover, .button:focus, .message-button:hover, .message-button:focus{
@@ -52,6 +53,7 @@ div {
     width: 250px;
     margin-left: 40px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 .page_footer {
     clear: both;
@@ -103,6 +105,11 @@ svg {
     width: 250px;
     margin-left: 40px;
 }
+.contact-form {
+    display: grid;
+    margin-left: 550px;
+    margin-right: 550px;  
+}
 .grid_item {
     display: inline-block;
     width: 33%;
@@ -126,12 +133,16 @@ svg {
 }
 }
 @media all and (max-width: 500px) {
-    .grid {
+    .grid, .profile, .about, .contact{
         grid-template-columns: 1fr;
     }   
+    .contact-form {
+        margin-left: 75px;
+        margin-right: 100px;
+    }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
+    .grid, .profile, .about, .contact{
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -139,12 +150,18 @@ svg {
     .grid {
         grid-gap: 10px;
     }
+
     .grid_item:last-child {
         grid-column: auto / auto;
         grid-row: auto / auto;
     }
     h1 {
         font-size: 22px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    svg {
+        display: none;
     }
 }
 @keyframes color-change {
