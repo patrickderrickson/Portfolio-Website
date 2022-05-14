@@ -295,3 +295,8 @@ svg {
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
             animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+.screenshot {
+    height: 200px;
+    width: 200px;
+}
