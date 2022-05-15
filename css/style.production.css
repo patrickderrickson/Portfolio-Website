@@ -179,13 +179,7 @@ svg {
     min-height: auto;
     margin: 0;
 }
-.grid_item:last-child {
-    -ms-grid-column: 3;
-    grid-column: 3 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
-}
+
 }
 @media all and (max-width: 500px) {
     .grid, .profile, .about, .contact{
@@ -299,4 +293,7 @@ svg {
 .screenshot {
     height: 250px;
     width: 445px;
+}
+.title {
+    text-align: center;
 }
